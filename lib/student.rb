@@ -62,7 +62,7 @@ class Student
   end
   
   def self.new_from_db(row)
-    binding.pry
+    #binding.pry
     new_student = self.new(name = row[1], grade = row[2])
     new_student.name = row[1]
     new_student.grade = row[2]
