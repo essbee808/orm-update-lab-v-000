@@ -55,7 +55,7 @@ class Student
     DB[:conn].execute(sql, self,id, self.name, self.grade)
   end
   
-  def self.create(name, grade)
+  def self.create(name:, grade:)
     student = Student.new(name, grade) #create instance with two attributes
     student.save #save instance into students table
     student
