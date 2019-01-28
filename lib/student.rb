@@ -65,5 +65,6 @@ class Student
     binding.pry
     new_student = self.new(row)
     
+    
   end
 end
